@@ -16,7 +16,9 @@
             <Label
                 Text="Olá. Mundo!"
                 Style="{StaticResource Headline}"
-                SemanticProperties.HeadingLevel="Level1" />
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center"/>
 
             <Label
                 Text="Bem-Vindo ao.NET Multi-platform App UI"
