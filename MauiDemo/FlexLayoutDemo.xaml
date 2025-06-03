@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiDemo.FlexLayoutDemo"
+             Title="FlexLayoutDemo">
+
+    <FlexLayout Direction="Column"
+            JustifyContent="SpaceEvenly"
+            AlignItems="Center">
+
+        <Label Text="Exemplo de FlexLayout"
+           FontSize="Large" TextColor="Red"/>
+
+        <Image Source="dotnet_bot.png"/>
+
+        <Button Text="Botão sem função" FontSize="Large"/>
+
+        <Label Text="Eu.Cinel.net - 2025" FontSize="Large"/>
+    </FlexLayout>
+
+
+
+    <!--<FlexLayout Direction="Column">
+        --><!--Header--><!--
+        <Label Text="Cabeçalho" FontSize="Large" Background="Aqua"
+           HorizontalTextAlignment="Center"/>
+
+        --><!--Body--><!--
+        <FlexLayout FlexLayout.Grow="1">
+
+            <Label Text="Conteúdo" FontSize="Large" Background="Gray"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"
+               FlexLayout.Grow="1"/>
+
+            --><!--itens laterais--><!--
+            <BoxView FlexLayout.Basis="50"
+                 FlexLayout.Order="-1"
+                 Color="Blue"/>
+
+            <BoxView FlexLayout.Basis="50"
+                 Color="Green"/>
+        </FlexLayout>
+
+        --><!--Rodapé--><!--
+        <Label Text="Rodapé" FontSize="Large" Background="Yellow"
+           HorizontalTextAlignment="Center"/>
+    </FlexLayout>-->
+
+    
+    
+    <!--<FlexLayout>
+        <Label Text="Label 1" BackgroundColor="Red"
+           FlexLayout.AlignSelf="Start"
+           FontSize="Large"/>
+        <Label Text="Label 2" BackgroundColor="Blue"
+           FlexLayout.AlignSelf="Center"
+           FontSize="Large"/>
+        <Label Text="Label 3" BackgroundColor="Yellow"
+           FlexLayout.AlignSelf="End"
+           FontSize="Large"/>
+        <Label Text="Label 4" BackgroundColor="Orange"
+           FlexLayout.AlignSelf="Auto"
+           FontSize="Large"/>
+    </FlexLayout>-->
+
+    
+    
+    <!--<FlexLayout Wrap="Reverse">
+        <Label Text="Label 1" BackgroundColor="Red"
+       FontSize="Large"/>
+        <Label Text="Label 2" BackgroundColor="Blue"
+       FontSize="Large"/>
+        <Label Text="Label 3" BackgroundColor="Yellow"
+       FontSize="Large"/>
+        <Label Text="Label 4" BackgroundColor="Orange"
+       FontSize="Large"/>
+        <Label Text="Label 5" BackgroundColor="Salmon"
+       FontSize="Large"/>
+        <Label Text="Label 6" BackgroundColor="Aqua"
+       FontSize="Large"/>
+        <Label Text="Label 7" BackgroundColor="Salmon"
+       FontSize="Large"/>
+    </FlexLayout>-->
+    
+</ContentPage>
+    
