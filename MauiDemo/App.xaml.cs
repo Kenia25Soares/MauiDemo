@@ -11,7 +11,7 @@
 
         protected override Window CreateWindow(IActivationState? activationState)
         {
-            //return new Window(new MinhaPagina());
+            //return new Window(new AppShell());
             var minhaPagina = new MinhaPagina();
 
             var navPage = new NavigationPage(minhaPagina);
@@ -19,10 +19,9 @@
             navPage.BarBackgroundColor = Colors.Yellow;
             navPage.BarTextColor = Colors.Blue;
 
-            return new Window(navPage);
+            var window = new Window(new TabbedPageDemo());
 
-
-
+            return window;
 
         }
     }
