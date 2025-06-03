@@ -23,7 +23,7 @@
             //var pagina = new GridLayoutDemo();
             //return new Window(new NavigationPage(pagina));
 
-            var pagina = new FlexLayoutDemo();
+            var pagina = new AbsoluteLayoutDemo();
             var navPage = new NavigationPage(pagina)
             {
                 BarBackgroundColor = Colors.Blue,
