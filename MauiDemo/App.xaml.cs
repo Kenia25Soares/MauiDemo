@@ -5,8 +5,6 @@
         public App()
         {
             InitializeComponent();
-
-      
         }
 
         protected override Window CreateWindow(IActivationState? activationState)
@@ -22,8 +20,17 @@
             //var window = new Window(new StackLayoutDemo());
 
             //return window;
-            var pagina = new StackLayoutDemo();
-            return new Window(new NavigationPage(pagina));
+            //var pagina = new GridLayoutDemo();
+            //return new Window(new NavigationPage(pagina));
+
+            var pagina = new GridLayoutDemo();
+            var navPage = new NavigationPage(pagina)
+            {
+                BarBackgroundColor = Colors.Blue,
+                //BarTextColor = Colors.White
+            };
+            return new Window(navPage);
+
 
         }
     }
